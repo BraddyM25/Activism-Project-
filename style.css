@@ -1,10 +1,94 @@
-html, body  {
+html  {
   height: 100%;
   width: 100%;
 }
+.header {
+ 
+  height: 700px;
+  margin-top: 10px;
+  text-align:center;
+  background-image: url("CompostBackground.jpg");
+  overflow: hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+}
+body {
+  transition: 1s;
+}
+
+
+
+#text {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 150px;
+  z-index: 1;
+}
+#foliage {
+  z-index: 2;
+}
+
+#header-left {
+  text-align-last: left;
+  font-style: fantasy;
+color:yellow;
+  
+}
+#header-right {
+  display:flex;
+  width: 50%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  
+}
+.grey 
+{
+  background-color: grey;
+
+}
+.pink 
+{
+  background-color: pink; 
+}
+.lightblue{
+  background-color: lightblue;
+}
+.yellow{
+  background-color: yellow
+}
+.lightgreen{
+  background-color: lightgreen;
+}
+#video{
+ 
+}
 #aboutWeek
 {
-  font-style: italic;
+  font-family: comic sans ms;
+  margin-top: 10px;
+}
+#Meaning 
+{
+  font-family: comic sans ms;
+  margin-top:20px;
+}
+#future{
+  font-family: comic sans ms;
+  margin-top:20px;
+}
+#why {
+  font-family: comic sans ms;
+  font-size:25px;
+}
+.compost{
+  width: 40%;
+  height: 50%;
 }
 .red {
   color: red;
@@ -12,4 +96,564 @@ html, body  {
 .green 
 {
   color: green;
+  
+  
+}
+.white{
+  color:white;
+  
+  text-align:left;
+  font-size: 50px;
+  font-family: comic sans ms;
+  width: 100%; 
+  transition: .5s; 
+}
+.white:hover {
+  color:grey;
+}
+.dropbtn {
+  
+  color: red;
+  font-family: comic sans ms;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #4a4a4f
+}
+.dropbtn:hover
+{
+  background-color: lightblue;
+  font-family: comic sans ms;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: orangered;
+}
+
+body{
+  width: 100%; 
+  text-align: center; /* Semicolon added to properly end the rule */
+}
+
+.box
+{
+  border: 3px solid green;
+  margin: 10px;
+  background-color:red;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  color: white
+  /* Semicolon added to properly end the rule */
+}
+.titleBox 
+{
+  border: 3px solid purple;
+  margin: 10px;
+  background-color:blue;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  color: white; 
+  text-align: center;
+}
+.flex-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+#flex-container-h3
+{
+  display: flex;
+  margin-right: 50px;
+  background-color:#4a4a4f;
+  text-decoration:none;
+}
+#flex-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+#header-button {
+  color: yellow;
+  font-size:  .5cm;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: comic sans ms;
+  transition:.5s
+}
+
+#header-button:hover{
+  background-color: orangered
+}
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  list-style-type: none;
+  width:100%;
+  margin:0;
+  padding:0;
+    background-color: #4a4a4f;
+  
+}
+.button {
+  border: none;
+  background-color: #4a4a4f;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: red;
+  padding: 16px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  font-family: comic sans ms;
+  text-align: center;
+  font-size: 16px;
+  transition: .5s;
+  
+}
+.button:hover  {
+  border: none;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: red;
+  font-family: comic sans ms;
+  text-align: center;
+  font-size: 16px;
+  background-color: lightblue;
+}
+.dropdownMenu {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-200%);
+  transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+  text-decoration: none;
+  display: block;
+  background-color: #f9f9f9;
+  color: #4a4a4f;
+  padding: 10px 5px;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dropdownLink:hover {
+  color: #fff;
+  background-color: #a0a0a3;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdownMenu {
+  transform: translateY(0%);
+}
+.white
+{
+  background-color: white;
+}
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  margin-right: 200px;
+  background-color: blue;
+  border: 5px solid black;
+  
+}
+.Info 
+{
+  border: 3px solid black;
+  margin: 0;
+  background-color:green;
+  padding: 10px;
+  width: 700px;
+  height: 150px;
+  color: white; 
+  text-align: center;
+}
+.subTitle{
+  font-style: fantasy; 
+  color:white; 
+  font-size:20px; 
+  background-color:blue; 
+  width: 1000px; 
+  margin-left: 250px;
+   border: 3px solid black;
+}
+.flex-container2
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center; 
+  margin-bottom: 100px;
+}
+.video 
+{
+ border: 5px solid black;
+}
+.Info2
+{
+  margin: 0;
+  background-color:purple;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  color: white; 
+  text-align: center;
+  border: 3px solid silver;
+
+}
+.link
+{
+background-color: blue;
+  font-style: fantasy;
+  color:white;
+  border: 3px solid grey;
+  margin-right:300px;
+}
+.flex-container3
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+.box3{
+  background-color: red; 
+  border: 3px solid black;
+  margin-top:300px;
+  margin-left: 1000px;
+  width:30%;
+  height:40%;
+  margin-right:10px;
+  margin-bottom:50px;
+}
+.dark-mode {
+
+  background-color: black;
+  color: white;
+  transition:1s;
+}
+
+#theme-button {
+text-decoration: wavy ;
+  color: red;
+  font-family: comic sans ms;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #4a4a4f
+}
+#theme-button:hover
+{
+  text-decoration: wavy ;
+  background-color: lightblue;
+  font-family: comic sans ms;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  color: orangered;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+
+  transform: translateY(0);
+  opacity: 1;
+
+}
+.dereveal{
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s all ease;
+}
+.dereveal.actively{
+
+  transform: translateY(-150px);
+  opacity: 0;
+
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.petition{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 100px
+}
+
+.petition div{
+  width: 100%;
+}
+
+.petition-details{
+  width: 100%;
+}
+
+.petition p{
+  justify-content: center;
+  padding: 16px; 
+  margin: auto;
+}
+
+
+#signatures{
+  text-align: center;
+}
+
+#form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px
+}
+
+#signatures p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#form input{
+  margin: 4px;
+  height: 28px;
+}
+#form label{
+  margin-left: 8px;
+}
+
+input[type=submit] {
+  text-align: center;
+  align-content: center;
+  background-color: blue;
+  color: white;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 5px;
+  transition: 0.8s;
+  margin: 16px;
+  width: 100px;
+  min-width: 100px;
+  height: 90px;
+}
+
+input[type=submit]:hover{
+  background-color: lightgray;
+    color: black;
+  }
+.sign-up {
+  border: 3px solid black;
+  border-radius:3px;
+  margin-top: 50px;
+  background-color: lightblue;
+  width: 80%;
+  height:20pc;
+  display: inline-block;
+
+}
+#signNowButton {
+  
+  margin-bottom:20px;
+  border:3px solid red;
+  border-radius:3px;
+  color: blue;
+  margin-right: 640px;
+}
+#signNowButton:hover {
+  background-color: red;
+  color: white;
+}
+#heading
+{
+  color:white;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 2px 2px 4px #000000;
+} 
+.sign-up-text {
+  font-family: comic sans ms;
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+  padding-left: 220px;
+  padding-right: 200px;
+
+}
+#img2{
+  width: 20%;
+  height: 6pc;
+}
+.petitionContainer{
+  display: flex;
+ flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width: 100%;
+  
+}
+.signatures {
+  width: 100%;
+  
+}
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+#hide {
+  background-color:red;
+  color: white;
+border: 3px solid black;
+  border-radius: 3px;}
+#hide:hover {
+  background-color:pink;
+  color: white;
+border: 3px solid black;
+  border-radius: 3px;}
+#show {
+  background-color:red;
+    color: white;
+  border: 3px solid black;
+    border-radius: 3px;
+}
+#show:hover {
+  background-color:pink;
+  color: white;
+border: 3px solid black;
+  border-radius: 3px;}
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+.modal-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.T{
+  font-family: comic sans ms;
+  margin-top: 10px;
+  color:white;
+}
+.modalImg {
+  transform: scale(0.6)
+}
+#reduceMotionButton {
+  background-color:red;
+    color: white;
+  border: 3px solid black;
+    border-radius: 3px;
+}
+#reduceMotionButton:hover {
+  background-color:pink;
+    color: white;
+  border: 3px solid black;
+    border-radius: 3px;
 }

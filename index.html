@@ -7,40 +7,238 @@
   <title>Compost Efficiency</title>
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="reset-webview.css" rel="stylesheet" type="text/css"
-  />
-</head>
-  
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
 
-<body style = "background-color: lightblue;">
-  <h1 class = "green" id = "aboutWeek"> Compost efficiency </h1>
-  <p> The question of why students decide not to compost at times, can go back to many general reasons that we have seen in the past: composting by hand can be very tedious, finding an area to compost near your community is difficult to find, separating the compost from the trash efficiently, and having to deal with the odor of the compost. All of these issues can be seen as huge impacting factors on peoples' decision whether or not they would like to compost. </p>
-  <br> 
-  <h2 class = "red" id = "aboutWeek"> What does it mean to Compost?</h2>
-  <ol>
-    <li>
-    Compost is a mixture of ingredients used as plant fertilizer. 
-    </li> 
-    <br>
-    <li>
-      Compost has various methods in which it is done, including aerobic and anaerobic. 
-    </li>
-    <br>
-    <li> 
-      Compost feeds nutrients to the soil and makes the ground much more rich. 
-    </li>
-  </ol>
-  
-  <br> 
-  <h2 class = "red" id = "aboutWeek"> what steps are being taken to make people compost more? </h2>
-  <ul>
-  <li>
-  </li>
-    <br>
-    <li>
-    </li>
-  </ul>
-  <script src="script.js"></script>
+</head>
+
+
+<body class = "my-element" id = "el">
+
+  <div class="flex-container" id="navigation">
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="show">show</button>
+    <button type="button" id="reduceMotionButton">Animation</button>
+
+    <a id="flex-container-h3" class="white" href="index.html">Compost</a>
+    <Button class="dropbtn" type="button" onclick="window.location.href='page2.html'"> Info </Button>
+    <Button class="dropbtn" type="button" onclick="window.location.href='page3.html'"> Ideas </Button>
+    <Button class="dropbtn" type="button" onclick="window.location.href='page4.html'"> advocate </Button>
+    <button id="theme-button">Mode</button>
+
+    <div class="dropdown &&reveal">
+      <Button class="button">Resources</Button>
+
+      <ul class="dropdownMenu">
+        <li class="dropdownItem"><a href="#aboutWeek" class="dropdownLink">About</a></li>
+        <li class="dropdownItem"><a href="#Meaning" class="dropdownLink">Meaning</a></li>
+        <li class="dropdownItem"><a href="#future" class="dropdownLink">Future</a></li>
+        <li class="dropdownItem"><a href="#video" class="dropdownLink">Video</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header" id="header-left">
+    <h2 style="top:50px; right: 410px; position:absolute; font-size:50px;   text-shadow: 2px 2px 5px red;">
+      Work towards a cleaner future!
+    </h2>
+    <section class="grey" id="flex-container">
+      <button id="header-button" type="button" onclick="window.location.href='page5.html'"> SIGN UP</button>
+      <button id="header-button" type="button" onclick="window.location.href='page6.html'"> Donate</button>
+      <button id="header-button" type="button" onclick="window.location.href='page7.html'"> Help</button>
+    </section>
+  </div>
+
+<div class = "dereveal">
+  <section class="reveal">
+    <h1 id="aboutWeek"> Compost efficiency </h1>
+
+
+    <div class="flex-container">
+      <img src="CompostTitle.png" class=compost alt="compost image"> </img>
+      <p class="titleBox"> The question of why students decide not to compost at times, can go back to many general
+        reasons that we have seen in the past: composting by hand can be very tedious, finding an area to compost near
+        your community is difficult to find, separating the compost from the trash efficiently, and having to deal with
+        the odor of the compost. All of these issues can be seen as huge impacting factors on peoples' decision whether
+        or not they would like to compost. </p>
+    </div>
+  </section>
+</div>
+
+
+
+  <section class="reveal">
+    <h2 id="Meaning"> What does it mean to Compost?</h2>
+    <img src="https://th.bing.com/th/id/OIP.GDxrx3t9KTs5Z-ZYT8vfIwHaEK?rs=1&pid=ImgDetMain" class=compost
+      alt="compost image"> </img>
+    <div class="flex-container">
+      <div class="box">
+        Compost is a mixture of ingredients used as plant fertilizer.
+      </div>
+      <div class="box">
+        Compost has various methods in which it is done, including aerobic and anaerobic.
+      </div>
+      <div class="box">
+        Compost feeds nutrients to the soil and makes the ground much more rich.
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="reveal">
+    <h2 id="future"> what steps are being taken to make people compost more? </h2>
+    <h3 class="subTitle">
+      There are various steps including some patents used to help make Compost less of a hassle. These patents Include:
+    </h3>
+    <div class="flex-container2">
+      <div class="flex-container3">
+        <img class="image"
+          src="https://patentimages.storage.googleapis.com/c0/d7/4a/00804d74c6db3b/HDA0002993053720000012.png"> </img>
+        <a class="link"
+          href="https://patents.google.com/patent/CN112851416A/en?oq=Patent+Number+%26+Published+Date:+CN112851416A%2c+published+5%2f28%2f2021">Patent#1</a>
+      </div>
+      <p class="Info">This patent describes a sort of horizontal aerobic composting device. This specific device
+        consists of a screw conveyor, a biological deodorization pool (I would predict to get rid of any bad odors from
+        the compost pile), a continuous mixer, and a horizontal composting bin that can be found at the end. This device
+        also has many different aeration pipes around the composting bin, which allows for a smooth flow of oxygen to
+        reach the compost pile, further speeding up the composting process and helping with producing more high-quality
+        compost. </p>
+    </div>
+    <div class="flex-container2">
+      <div class="flex-container3">
+        <img class="image"
+          src="https://patentimages.storage.googleapis.com/a3/06/db/8af3b91b37d1ea/US20160369485A1-20161222-D00001.png"></img>
+        <a class="link"
+          href="https://patents.google.com/patent/US20160369485A1/en?oq=Patent+Number+and+Date+Published:+US20160369485A1%2c+published+12%2f22%2f2016+">Patent#2</a>
+      </div>
+      <p class="Info"> This patent shows and describes a composting garbage disposal system that is meant to be
+        installed under a sink. This system (if working properly) would separate food waste items into solid and liquid
+        components. The liquid components of food waste would then be directed to a septic system or standard sewer,
+        while the solid components would be directed to a removable storage bin. The food waste items in this system
+        would be separated by use of a motor which is in close proximity to the inside wall of the screened cup so that
+        liquid exits the screen portion of the cup and the solid exits through an opening hole/gap in the floor of the
+        cup. </p>
+    </div>
+    <div class="flex-container2">
+      <div class="flex-container3">
+        <img class="image"
+          src="https://patentimages.storage.googleapis.com/a5/8a/8c/b249f7669dcf23/US3890129-drawings-page-3.png"></img>
+        <a class="link"
+          href="https://patents.google.com/patent/US3890129A/en?oq=Patent+Number:+US3890129A+Publication+of+patented+Device:+2001-08-29">Patent#3</a>
+      </div>
+      <p class="Info">The Composting Tumbler is a device that separates decomposing material and compost from each
+        other. With the Composting Tumbler, you use its axle to rotate the compost inside the dual chamber. As you turn
+        the decaying material you are aerating them, making it easier to allow the plants to receive nutrients from it.
+        The tumbler can be used in very enclosed spaces and can also contain odor from the compost that you may usually
+        smell. The rotating of the tumbler is what causes an increase in heat of the compost, speeding up the process of
+        composting as well. The compost tumbler is also mobile with wheels being on the bottom of it and being able to
+        move these devices around freely.
+      </p>
+    </div>
+    <div class="flex-container2">
+      <div class="flex-container3">
+        <img class="image"
+          src="https://patentimages.storage.googleapis.com/54/7c/48/cecefecd686c4c/US08129177-20120306-D00000.png">
+        </img>
+        <a class="link"
+          href="https://patents.google.com/patent/US8129177B2/en?oq=Patent+Number:+US8129177B2+Publication+of+Patented+Device:+03-06-2012">Patent#4</a>
+      </div>
+      <p class="Info"> There are various composting methods when trying to figure out how to compost correctly and
+        efficiently. One of the methods is having a bin or something that contains the odor of the organic material
+        waste and acts as a chambered system. It would also be formidable to have an insulated house that is able to
+        achieve efficient thermal temperatures and that is able to cause the material to compost rapidly. Having a
+        mixing wand or something that can break down the organic waste would also be a smart way of aerating and
+        impacting the materials in some way. A drip tray can segregate the liquid by products from the solid compost
+        materials. An air pump can also draw in air while absorbing the odors before returning the air to the external
+        environment. This patented device allows you to use a lot of the composting benefits that I have previously
+        stated above.
+      </p>
+    </div>
+  </section>
+  </div>
+
+
+
+
+  <section class="reveal" >
+    <h2 id="why">Why Compost?</h2>
+    <div class="flex-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oFlsjRXbnSk?si=WfnlHR3BIRgTTCod" class="video"
+        style=" margin-right: 100px;" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="Info2">The video "Why is Composting Good for the Environment?" explains the environmental benefits of
+        composting. It highlights how composting reduces waste in landfills, decreases methane emissions, enriches soil
+        with nutrients, and supports plant growth. Composting also helps retain soil moisture and reduces the need for
+        chemical fertilizers, promoting sustainable agricultural practices. The video encourages viewers to adopt
+        composting as an eco-friendly habit.</p>
+    </div>
+  </section>
+
+<br>
+  <br>
+
+<div class = "reveal">
+  <div class="petition" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petitionContainer">
+
+      <div>
+
+
+        <div class="signatures">
+          <div class="petition">
+            <div class="petition-details">
+              <p>
+                We believe in the power of composting to reduce waste, enrich soil, and create a sustainable future. By
+                signing this petition, you are supporting the implementation a lo nd expansion of composting programs in
+                our community. Together, we can make a significant impact on our environment and promote healthier, more
+                sustainable living.
+              </p>
+              <form id="form">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <input type="submit" value="Sign Now" id="submit">
+                <div id = "myProgress">
+                  <div id="myBar">
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div id="signatures">
+              <p>Signatures: <span id="signature-count">0</span></p>
+            </div>
+          </div>
+
+            <div id="thanks-modal" class="modal">
+            <div class="modal-content">              
+              <div id="modal-text-container">
+                <button id="closeModalButton" class="modal-button">Close</button>
+                <p class = "T"> </p>
+              </div>
+              <img id = "I" class = "modalImg" src = "22440.jpg"></img>
+
+            </div>
+              </div>
+        </div>
+        </div>
+
+
+              <script src="index.js"></script>
+              <div class="footer">
+                <a href="https://www.healthline.com/nutrition/composting-beginners-guide">Health Values</a>
+                <a href="https://www.epa.gov/recycle/composting-home">Composting at Home</a>
+              </div>
+        
+
 </body>
 
 </html>
